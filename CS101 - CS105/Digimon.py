@@ -231,3 +231,5 @@ trainer_two.switch_active_Digimon(1)
 # still working
 # 
 # and working
+
+# new feature add
