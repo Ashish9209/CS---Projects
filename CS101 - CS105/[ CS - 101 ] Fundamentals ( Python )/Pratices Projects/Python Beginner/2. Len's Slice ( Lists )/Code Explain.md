@@ -1,0 +1,3 @@
+Code explanation
+
+This Python code defines lists for pizza toppings and their corresponding prices. It counts how many pizzas cost $2, calculates the number of different pizza types, and prints this information. It organizes pizza prices and toppings into a list of lists, sorts them by price, identifies the cheapest and priciest pizzas, and then modifies the list by removing the most expensive pizza and adding a new one. After sorting again, it prints the updated list and selects the three cheapest pizzas to display. Overall, the code manages pizza data through list operations like counting, sorting, modifying, and slicing to analyze and present pizza options and prices effectively.
