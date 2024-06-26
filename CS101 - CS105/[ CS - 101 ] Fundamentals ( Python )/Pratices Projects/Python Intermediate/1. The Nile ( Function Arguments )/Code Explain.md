@@ -1,0 +1,9 @@
+This code defines three functions: `calculate_shipping_cost`, `calculate_driver_cost`, and `calculate_money_made`. 
+
+1. `calculate_shipping_cost(from_coords, to_coords, shipping_type='Overnight')`: This function calculates the shipping cost based on the distance between two coordinates (`from_coords` and `to_coords`). It uses the `get_distance` function from the `nile` module to compute the distance, and accesses a predefined dictionary `SHIPPING_PRICES` to get the shipping rate based on the specified `shipping_type`. It then computes the total price by multiplying distance and shipping rate, and returns the formatted price.
+
+2. `calculate_driver_cost(distance, *drivers)`: This function calculates the cost for hiring a driver for a given distance. It takes multiple `drivers` as variable arguments (`*drivers`). For each driver, it calculates the time taken (`driver_time`) to cover the distance based on the driver's speed, then computes the cost (`price_for_driver`) as the product of the driver's hourly salary and the time taken. It determines the cheapest driver based on the computed cost and returns both the cost and the corresponding driver.
+
+3. `calculate_money_made(**trips)`: This function calculates the total money made from a series of trips. It takes a variable number of trip objects (`**trips`), where each trip is identified by a unique `trip_id`. For each trip, it calculates the revenue (`trip_revenue`) by subtracting the driver's cost from the trip's total cost (`trip.cost - trip.driver.cost`). It accumulates these revenues to compute the `total_money_made` and returns this total.
+
+Each function is tested using the `test_function` from the `test` module, ensuring that they perform correctly under specified test conditions.
